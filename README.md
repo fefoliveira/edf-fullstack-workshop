@@ -1,4 +1,4 @@
-# fullstack-workshop
+# Fullstack Workshop offered by EdF
 Repositorie with all the codes made during the fullstack workshop offered by [Engenharia do Futuro](https://engenhariadofuturo.com.br).
 
 My version of this simple project is based on an online used sales store, from which I was able to learn a lot of front-end and back-end development concepts.
