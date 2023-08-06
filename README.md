@@ -1,5 +1,5 @@
 # fullstack-workshop
-Repositorie with all the codes made during the fullstack workshopp offered by [Engenharia do Futuro](https://engenhariadofuturo.com.br)
+Repositorie with all the codes made during the fullstack workshopp offered by [Engenharia do Futuro](https://engenhariadofuturo.com.br).
 
 <!--
 run app:
