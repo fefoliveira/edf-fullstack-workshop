@@ -7,7 +7,7 @@ class Item(db.Model):
     nome = db.Column(db.String(255), nullable=False)                    #nullable == se é ou não indispensável ter essa coluna;
     preco = db.Column(db.Integer, nullable=False)   
     categoria = db.Column(db.String(255), nullable=False)
-    tempo = db.Column(db.Integer)
+    tempo = db.Column(db.Integer, nullable=False)
     
     id_user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)    
     #db.foreign_keys('user.id) == especifica que a coluna 'id_user' (coluna desta tabela) é uma chave estrangeira que faz referência à coluna 'id' na tabela 'user'.
