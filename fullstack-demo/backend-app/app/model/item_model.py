@@ -9,11 +9,12 @@ class Item(db.Model):
     categoria = db.Column(db.String(255), nullable=False)
     tempo = db.Column(db.Integer)
     
-    id_user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)    #db.foreign_keys == "chama" a coluna referenciada da classe pai;
+    id_user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)    
+    #db.foreign_keys('user.id) == especifica que a coluna 'id_user' (coluna desta tabela) é uma chave estrangeira que faz referência à coluna 'id' na tabela 'user'.
     user = db.relationship('User', foreign_keys=[id_user], back_populates='items', uselist=False)
     #db.relationship == relaciona duas classes em um banco de dados relacional, geralmente entre uma classe pai (ou tabela principal) e uma classe filha (ou tabela secundária);
-    #foreign_keys == define as colunas que podem fazer parte do relacionamento;
-    #back_populates == define o nome que vai ser usado para referencias a coluna da classe pai na classe filha;
+    #foreign_keys == define as colunas que podem fazer parte do relacionamento (mostra qual a chave estrangeira que está sendo usada pra essa relação);
+    #back_populates == define o nome que vai ser usado para referenciar a coluna da classe pai na classe filha;
     #uselist == define se essa coluna tem relação com varias outras ou com uma só.
 
 def __init__(self, nome, preco, categoria, tempo, id_user):

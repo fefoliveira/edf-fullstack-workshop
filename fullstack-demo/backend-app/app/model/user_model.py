@@ -10,7 +10,7 @@ class User(db.Model):
 
     items = db.relationship('Item', back_populates='user', uselist=True)
     #db.relationship == relaciona duas classes em um banco de dados relacional, geralmente entre uma classe pai (ou tabela principal) e uma classe filha (ou tabela secundária);
-    #back_populates == define o nome que vai ser usado para referencias a coluna da classe pai na classe filha;
+    #back_populates == define o nome que vai ser usado para referenciar a coluna da classe pai na classe filha;
     #uselist == define se essa coluna tem relação com varias outras ou com uma só.
 
 def __init__(self, nome, cpf, endereco):
