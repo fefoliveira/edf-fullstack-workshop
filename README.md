@@ -3,8 +3,6 @@ Repository with all the codes made during the fullstack workshop offered by [Eng
 
 My version of this simple project is based on an online used sales store, from which I was able to learn a lot of front-end and back-end development concepts.
 
-The project is not finished yet.
-
 <!--
 run app:
 poetry run flask --app app run
